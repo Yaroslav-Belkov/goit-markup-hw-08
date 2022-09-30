@@ -50,7 +50,7 @@ width: 450px;
 // tablet
 @media screen and (min-width:768px) {
   // width: 354px; 
-  width: calc(100% - 15 * 4) / 2;
+  width: calc (100% - 15 * 4) / 2;
   margin: 15px;
 }
 // desktop
