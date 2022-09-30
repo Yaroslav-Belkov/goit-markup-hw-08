@@ -1,0 +1,58 @@
+// block 5
+
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 200px 0;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg_mode.jpg);
+  background-color: var(--hero-bg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.heero__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--light-collor);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+  .hero__button {
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.88;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.06em;
+      border-radius: 4px;
+      padding: 10px 32px;
+      min-width: 216px;
+      border: none;
+      background-color: var(--button-color);
+      color: var(--light-collor);
+      transition-property: color, background-color;
+      transition-duration: 250ms;
+      transition-timing-function: var(--cubic-bezier);
+    }
+
+        .hero__button:hover,
+        .hero__button:focus {
+          background: var(--button-hover-color);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+    
+        .hero__button,
+        .hero__button-filters {
+          cursor: pointer;
+        }

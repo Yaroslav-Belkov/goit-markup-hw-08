@@ -1,0 +1,45 @@
+//  block 10
+
+.regular__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icons-color);
+  color: var(--icons-color);
+  border-radius: 4px;
+  transition-property: color, border;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.regular__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.regular__list {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+
+
+.regular__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.regular__link:hover,
+.regular__link:focus {
+  color: var(--hover-color);
+  border: 1px solid var(--hover-color);
+}
+
+.svg-icons {
+  fill: currentColor;
+}
