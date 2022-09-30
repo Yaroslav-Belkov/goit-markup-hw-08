@@ -25,24 +25,63 @@ a {
 }
 
 .conteiner {
+
+  // mobile style
+  max-width: 480px;
   margin: 0 auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+
+  outline: 1px solid black;
+
+  // tablet style
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  // desktop style 
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
 .section {
-  padding-top: 94px;
+    // mobile style
+ 
+      padding-top: 30px;
+  padding-bottom: 30px;
+    
+
+    // tablet style
+    @media screen and (min-width: 768px) {
+      padding-top: 60px;
+  padding-bottom: 60px;
+    }
+
+    // desktop style 
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
   padding-bottom: 94px;
+    }
 }
 
 /* Заголовки */
 
 .title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+//   mobile + tablet
+font-size: 28px;
+font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    
+// desktop style 
+  @media screen and (min-width:1200px) {
+    
+   
+  }
+  
 }
 
 .button {
