@@ -49,8 +49,8 @@ width: 450px;
 
 // tablet
 @media screen and (min-width:768px) {
-  // width: 354px; 
-  width: calc (100% - 15 * 4) / 2;
+  width: 354px; 
+  // width: calc(100% - 15 * 4) / 2;
   margin: 15px;
 }
 // desktop
@@ -67,10 +67,6 @@ width: 450px;
   }
 
  
- 
-
-
-
 .advantages__item:not(:last-child) {
     @media screen and (max-width:767px) {
     margin-bottom: 30px;
@@ -92,7 +88,7 @@ width: 450px;
 .advantages__content {
   line-height: 1.71;
   color: var(--spec-content-color);
-
+ 
 }
 
 
