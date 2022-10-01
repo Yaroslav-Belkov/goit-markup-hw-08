@@ -75,14 +75,8 @@ a {
 }
 
 .section {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -466,6 +460,11 @@ a {
   color: var(--spec-content-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .proffesional {
+    display: none;
+  }
+}
 .proffesional__title {
   font-weight: 700;
   font-size: 36px;
@@ -518,44 +517,66 @@ a {
   color: var(--light-collor);
 }
 
-.team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
-
-.team__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.team__list .team__item + .team__item {
-  margin-left: 30px;
-}
-
-.team__title {
-  margin-bottom: 50px;
+@media screen and (min-width: 1200px) {
+  .team__list .team__list .team__item + .team__item {
+    margin-left: 30px;
+  }
 }
 
 .team__item {
-  width: 270px;
+  width: 450px;
   background-color: var(--light-collor);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (min-width: 768px) {
+  .team__item {
+    max-width: 354px;
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    max-width: 270px;
+  }
+}
 
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .team__name {
   margin-bottom: 10px;
 }
 
 .team {
   background: var(--team-content-color);
+}
+
+.team__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .team__name {
@@ -574,7 +595,13 @@ a {
 
 .team__conteiner {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team__conteiner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .social__list {
@@ -636,7 +663,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--icons-color);
   color: var(--icons-color);
@@ -648,28 +675,52 @@ a {
   -webkit-transition-timing-function: var(--cubic-bezier);
           transition-timing-function: var(--cubic-bezier);
 }
+@media screen and (min-width: 768px) {
+  .regular__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .regular__link {
+    width: 170px;
+  }
+}
 
-.regular__item:not(:last-child) {
-  margin-right: 30px;
+.regular__item {
+  margin: 15px;
 }
 
 .regular__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
+}
+@media screen and (min-width: 1200px) {
+  .regular__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
 }
 
 .regular__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .regular__title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .regular__link:hover,
