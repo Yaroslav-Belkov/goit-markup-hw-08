@@ -29,6 +29,19 @@
 //   margin-right: 30px;
 // }
 
+.regular__list {
+  display: flex;
+flex-wrap: wrap;
+margin: -15px;
+
+  // desktop 
+  @media screen and (min-width:1200px) {
+    justify-content: center;
+    align-self: center; 
+  }
+
+}
+
 
 .regular__item {
   margin: 15px;
@@ -44,20 +57,6 @@
   width: calc((100% - 12 * 15) / 6);
 }
 }
-
-.regular__list {
-  display: flex;
-flex-wrap: wrap;
-margin: -15px;
-
-  // desktop 
-  @media screen and (min-width:1200px) {
-    justify-content: center;
-    align-self: center; 
-  }
-
-}
-
 
 
 .regular__title {
