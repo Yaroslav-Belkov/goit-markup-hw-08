@@ -7,6 +7,7 @@
 }
 
 .footer__right {
+  text-align: center;
   margin-left: auto;
 }
 
@@ -15,7 +16,7 @@
 }
 
 .newsletter__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   background-color: transparent;
   padding-left: 16px;
@@ -26,6 +27,13 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  margin-bottom: 20px;
+
+
+  @media screen and (min-width:1200px) {
+    width: 358px;
+  }
+ 
 
 
 }
@@ -33,13 +41,18 @@
 
 .newsletter__icons {
   position: absolute;
-  top: 10px;
-  right: 28px;
+
+  right: 18px;
+  top: 50%;
+  transform: translatey(-50%);
 }
 
 .newsletter__btn {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   position: relative;
-  margin-left: 12px;
+  
   padding-left: 28px;
 
 

@@ -49,20 +49,21 @@ width: 450px;
 
 // tablet
 @media screen and (min-width:768px) {
-  width: 354px; 
-  // width: calc(100% - 15 * 4) / 2;
+  // width: 354px; 
+  width: calc((100% - 15px * 4) / 2);
   margin: 15px;
 }
 // desktop
   @media screen and (min-width:1200px) {
-    width: 270px; 
+    // width: 270px; 
+    width: calc((100% - 15px * 8) / 4);
   }
  
-  .advantages__item+.advantages__item {
-    @media screen and (min-width:1200px) {
-      margin-left: 30px;
-    }
-  }
+  // .advantages__item+.advantages__item {
+  //   @media screen and (min-width:1200px) {
+  //     margin-left: 30px;
+  //   }
+  // }
 
   }
 

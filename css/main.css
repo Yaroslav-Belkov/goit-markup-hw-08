@@ -426,18 +426,13 @@ a {
 }
 @media screen and (min-width: 768px) {
   .advantages__item {
-    width: 354px;
+    width: calc((100% - 60px) / 2);
     margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .advantages__item {
-    width: 270px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantages__item .advantages__item + .advantages__item {
-    margin-left: 30px;
+    width: calc((100% - 120px) / 4);
   }
 }
 
@@ -733,13 +728,18 @@ a {
   fill: currentColor;
 }
 
+.footer__adress--left {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 .footer.portfolio {
   margin-top: 94px;
 }
 
 .footer {
   background: var(--footer-color);
-  padding: 60px 0;
+  padding: 60px 15px;
 }
 
 .address__contacts {
@@ -790,30 +790,35 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--light-collor);
-  margin-top: 8px;
+}
+@media screen and (max-width: 1199px) {
+  .address__item {
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address__item {
+    margin-top: 9px;
+  }
 }
 
 .footer__title {
+  display: inline-block;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--light-collor);
 }
 
-.footer__adres {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
 .footer__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer__social--link {
@@ -846,7 +851,12 @@ a {
 }
 
 .footer__center {
-  margin-left: 70px;
+  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .footer__center {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__social:not(:last-child) {
@@ -1312,6 +1322,7 @@ a {
 }
 
 .footer__right {
+  text-align: center;
   margin-left: auto;
 }
 
@@ -1320,7 +1331,7 @@ a {
 }
 
 .newsletter__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   background-color: transparent;
   padding-left: 16px;
@@ -1332,17 +1343,24 @@ a {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .newsletter__input {
+    width: 358px;
+  }
 }
 
 .newsletter__icons {
   position: absolute;
-  top: 10px;
-  right: 28px;
+  right: 18px;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
 }
 
 .newsletter__btn {
   position: relative;
-  margin-left: 12px;
   padding-left: 28px;
 }
 
