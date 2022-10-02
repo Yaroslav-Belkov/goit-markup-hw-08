@@ -55,23 +55,22 @@ a {
   text-decoration: none;
 }
 
-@media screen and (min-width: 480px) {
-  .conteiner {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+.conteiner {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
 }
 @media screen and (min-width: 768px) {
   .conteiner {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .conteiner {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -914,14 +913,33 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 767px) {
+  .portfolio__filters {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__filters {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
-.portfolio__list + .portfolio__list {
-  margin-left: 8px;
+@media screen and (max-width: 767px) {
+  .portfolio__list {
+    margin-left: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__list + .portfolio__list {
+    margin-left: 8px;
+  }
 }
 
 .portfolio-border {
