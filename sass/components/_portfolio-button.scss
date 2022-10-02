@@ -40,9 +40,10 @@
 
 }
 .portfolio__list {
+  // стандартно по 8пх Сменил так как в моб версии не переносится в низ 2 елемента фильтра
 @media screen and (max-width:767px) {
-  margin-left: 8px;
-  margin-bottom: 8px;
+  margin-left: 12px;
+  margin-bottom: 12px;
 }
 
 
