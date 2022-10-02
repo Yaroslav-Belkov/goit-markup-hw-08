@@ -21,18 +21,18 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
-    <!-- <header>
+     <header>
      
-      <div class="header-conteiner">
+      <div class=" conteiner header-conteiner">
         
-        <nav class="nav-flex"> -->
+        <nav class="nav-flex"> 
 
           <!-- Logotipe -->
 
-          <!-- <a class="logo" href="./index.html">
+          <a class="logo" href="./index.html">
             Web
             <span class="logo__studio--dark">Studio</span>
-          </a> -->
+          </a> 
 
           <!-- Menu navigation -->
 
@@ -48,11 +48,21 @@
             <li class="nav__item">
               <a class="nav__link contacts" href="">Контакти</a>
             </li>
-          </ul>
-        </nav> -->
+          </ul> -->
+          <button
+          class="menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/sprite.svg#menu-open"></use>
+          </svg>
+        </button>
+        
 
         <!--Contacts-->
-        <!-- <ul class="contacts">
+         <!-- <ul class="contacts">
           <li class="contacts__item">
             <a class="contacts__mail contacts__link" href="mailto:info@devstudio.com">
               <svg class="contacts__icons" width="16px" height="12px">
@@ -69,9 +79,10 @@
               +38 096 111 11 11
             </a>
           </li>
-        </ul>
-      </div>
-    </header> -->
+        </ul> -->
+      </nav>
+      </div> 
+    </header> 
     <!--Banner-->
      <main>
       <section class="hero">
@@ -621,7 +632,7 @@
               <textarea class="register-form__message" name="register-messege" rows="5" placeholder="Введіть текст"></textarea>
             </label>
           </div>
-<div>
+
           <label class="register-form__agreement">
             <input class="register-form__checkbox visually__hidden" type="checkbox" required />
             <svg class="register-form__icons--checked" width="16" height="15">
@@ -635,9 +646,67 @@
           </label>
           <button class="register-form__btn button" type="submit">Відправити</button>
         </form>
-     
+      </div>
     </div>
-    <script src="./js/modal.js"></script>
+
+
+    
+          <!-- Mobile menu -->
+            <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40">
+            <use href="./images/sprite.svg#close_menu"></use>
+            </svg>
+            </button>
+
+  <ul class="mobile-menu">
+    <li>
+      <a href="" class="">About</a>
+    </li>
+    <li>
+      <a href="" class="">Products</a>
+    </li>
+    <li>
+      <a href="" class="">Contacts</a>
+    </li>
+    <li>
+      <a href="" class="">Career</a>
+    </li>
+  </ul>
+
+  <ul class="">
+    <li>
+      <a href="" class="">+38 096 111 11 11</a>
+    </li>
+    <li>
+      <a href="" class="">info@devstudio.com</a>
+    </li>
+  </ul>
+
+  <ul class="mobile-socials list">
+    <li><a href="" class="">Instagram </a></li>
+    <li><a href="" class="">Twitter</a></li>
+    <li><a href="" class="">Facebook</a></li>
+    <li><a href="" class="">LinkedIn</a></li>
+  </ul>
+</div>
+
+    
+       <!-- mobile menu script-->
+       <script
+       defer
+       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+       crossorigin="anonymous"
+     ></script>
+     <script defer src="./js/mobile-menu.js"></script>
+    <!-- modal script -->
+  <script src="./js/modal.js"></script> 
   </body>
 </html>
 <!--Readi quest-->
+
+
+
+
+
