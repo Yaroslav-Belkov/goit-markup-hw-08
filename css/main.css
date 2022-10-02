@@ -1341,6 +1341,9 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1361,10 +1364,6 @@ a {
   .footer__right {
     margin-left: auto;
   }
-}
-
-.newsletter {
-  position: relative;
 }
 
 .newsletter__input {
@@ -1406,6 +1405,12 @@ a {
 .newsletter__btn {
   position: relative;
   padding-left: 28px;
+}
+@media screen and (min-width: 1200px) {
+  .newsletter__btn {
+    height: 50px;
+    margin-left: 12px;
+  }
 }
 
 .newsletter__input::-webkit-input-placeholder {
