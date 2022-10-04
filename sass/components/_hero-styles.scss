@@ -1,7 +1,7 @@
 // block 5
 
 .hero {
-  max-width: 480px;
+  max-width: 1600px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -55,7 +55,7 @@
 
   // tablet
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+  // max-width: 768px;
     height: 400px; 
   }
     
@@ -63,7 +63,7 @@
 
   // desctop
   @media screen and (min-width:1200px) {
-    max-width: 1600px;
+  // max-width: 1200px;
     height: 600px;
     padding: 200px 0;
   }

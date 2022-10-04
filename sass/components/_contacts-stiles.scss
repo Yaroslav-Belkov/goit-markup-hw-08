@@ -20,24 +20,29 @@
 }
 
 
-.contacts {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
 
-
-}
-
-.contacts__item {
-  margin-right: 50px;
-}
-
-.contacts__item:last-child {
-  margin-right: 0;
-}
 
 
 .contacts__icons {
   margin-right: 10px;
   fill: currentColor;
 }
+
+
+.contacts {
+  display: none;
+  
+  margin-left: auto;
+  
+  @media screen and (min-width: 768px) {
+      display: block;  
+      
+    }
+  @media screen and (min-width: 1200px) {
+      display: flex;  
+      gap: 30px;
+    }
+  }
+
+
+
