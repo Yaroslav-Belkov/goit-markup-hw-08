@@ -61,7 +61,6 @@ a {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 768px) {
   .conteiner {
@@ -203,12 +202,8 @@ a {
   background-color: var(--button-hover-color);
 }
 
-.nav__item {
+.nav__item:not(:last-child) {
   margin-right: 50px;
-}
-
-.nav__item:last-child {
-  margin-right: 0;
 }
 
 .nav-flex {
@@ -226,6 +221,11 @@ a {
   display: flex;
   margin-left: 93px;
 }
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
 
 .nav__link:hover,
 .nav__link:focus {
@@ -236,6 +236,29 @@ a {
 .nav .portfolio.current {
   position: relative;
   color: var(--hover-color);
+}
+
+.contacts-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  .contacts-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-menu {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
 }
 
 .contacts__link {
@@ -1599,6 +1622,11 @@ a {
   padding: 0;
   background-color: transparent;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
 }
 
 .mobile-socials {
