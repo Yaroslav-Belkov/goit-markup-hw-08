@@ -349,7 +349,7 @@ a {
 .heero__title {
   font-size: 26px;
   line-height: 1.6153846154;
-  width: 360px;
+  text-align: center;
   font-weight: 900;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -540,7 +540,6 @@ a {
 }
 
 .team__item {
-  width: 450px;
   background-color: var(--light-collor);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
