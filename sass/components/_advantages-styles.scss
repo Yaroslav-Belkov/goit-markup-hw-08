@@ -68,9 +68,20 @@ width: calc((100% - 15px * 2) / 1 );
 
 
 .svg__icons--advantages {
-  padding: 25px 100px 25px 100px;
-  width: 100%;
+  // padding: 25px 100px 25px 100px;
+  width: 70px;
+  height: 70px;
+  // margin-bottom: 30px;
+  // background-color: #f5f4fa;
+}
+
+.advantages_box {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 120px;
-  margin-bottom: 30px;
+  border-radius: 4px;
   background-color: #f5f4fa;
+  margin-bottom: 30px;
 }
