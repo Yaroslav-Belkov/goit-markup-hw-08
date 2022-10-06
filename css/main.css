@@ -290,6 +290,12 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item {
+    margin-bottom: 10px;
+  }
+}
+
 .hero {
   max-width: 1600px;
   height: 400px;
@@ -420,12 +426,11 @@ a {
 
 .advantages__item {
   display: block;
-  margin: 15px;
-  width: calc((100% - 30px) / 1);
 }
 @media screen and (min-width: 768px) {
   .advantages__item {
     width: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -777,7 +782,7 @@ a {
 
 .footer {
   background: var(--footer-color);
-  padding: 60px 15px;
+  padding: 60px 0;
 }
 
 .address__contacts {
@@ -958,7 +963,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
+  gap: 8px;
+  row-gap: 15px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 767px) {
   .portfolio__filters {
@@ -973,21 +980,7 @@ a {
             justify-content: center;
   }
 }
-
-@media screen and (max-width: 767px) {
-  .portfolio__list {
-    margin-left: 12px;
-    margin-bottom: 12px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .portfolio__list + .portfolio__list {
-    margin-left: 8px;
-  }
-}
-
-.portfolio-border {
+.portfolio__filters .portfolio-border {
   border-top: 1px solid var(--border-color-top);
 }
 
@@ -1122,6 +1115,14 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--cubic-bezier);
+          transition-timing-function: var(--cubic-bezier);
 }
 
 .portfolio-cards__products {
@@ -1625,6 +1626,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 64px;
 }
 
@@ -1661,7 +1664,7 @@ a {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: #2196F3;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;

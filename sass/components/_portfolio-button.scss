@@ -27,7 +27,9 @@
 
 .portfolio__filters {
   display: flex;
-  margin-bottom: 50px;
+  gap: 8px;
+  row-gap: 15px;
+  margin-bottom: 40px;
   @media screen and (max-width:767px) {
   flex-wrap: wrap;
 
@@ -38,26 +40,27 @@
   
   
 
-}
-.portfolio__list {
-  // стандартно по 8пх Сменил так как в моб версии не переносится в низ 2 елемента фильтра
-@media screen and (max-width:767px) {
-  margin-left: 12px;
-  margin-bottom: 12px;
-}
+// }
+// .portfolio__list {
+//   // стандартно по 8пх Сменил так как в моб версии не переносится в низ 2 елемента фильтра
+// @media screen and (max-width:767px) {
+// //   margin-left: 12px;
+// //   margin-bottom: 12px;
+// }
 
 
-}
+// }
 
-.portfolio__list + .portfolio__list {
-  @media screen and (min-width:768px) { 
-    margin-left: 8px;
-  }
+// .portfolio__list + .portfolio__list {
+//   @media screen and (min-width:768px) { 
+//     margin-left: 8px;
+//   }
 
-}
+// }
 
 
 .portfolio-border {
   border-top: 1px solid var(--border-color-top);
 
+}
 }
